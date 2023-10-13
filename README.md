@@ -28,7 +28,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 10. **[deseq_timepoint.R](https://github.com/username/repository-name/blob/main/deseq_timepoint.R):** This R script performs differential gene expression analysis using DESeq2 specifically tailored for timepoint data. DESeq2 is a widely used package in R for detecting differentially expressed genes between different conditions or timepoints in RNA-seq data.
 
-11. **[DEseq_heatmap.R](https://github.com/username/repository-name/blob/main/DEseq_heatmap.R):** Generates heatmaps based on the results of DESeq2 analysis. Heatmaps are graphical representations used to visualize gene expression patterns, providing a clear visual representation of differential expression across samples or conditions.
+11. **[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R):** Generates heatmaps based on the results of DESeq2 analysis. Heatmaps are graphical representations used to visualize gene expression patterns, providing a clear visual representation of differential expression across samples or conditions.
 
 12. **[Upset_Plot.R](https://github.com/username/repository-name/blob/main/Upset_Plot.R):** Creates UpSet plots, a type of data visualization that allows for the analysis of sets, intersections, and their size relationships. UpSet plots are particularly useful for visualizing the overlap and uniqueness of gene sets, providing insights into shared and distinct features across different conditions or datasets.
 
@@ -156,11 +156,14 @@ Welcome to our optimized repository for Differential Expression Analysis in R! T
 
 **How to Use:**
 
-1. **Clone the Repository**: Clone this repository to your local machine.
+1. **Clone the Repository**: Download or clone this repository.
 
-2. **Run the Scripts**: Modify the analysis parameters in the R scripts and execute them to perform differential expression analysis on your RNA-seq data.
+2. **Run the Scripts**: Modify parameters in the R scripts and run them to analyze your RNA-seq data.
 
-3. **Explore Your Results**: Visualize and explore the generated plots and lists to gain insights into your dataset.
+3. **Analyze Results**: Visualize your data with generated plots and lists.
+
+**[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R)** 
+
 
 
 
