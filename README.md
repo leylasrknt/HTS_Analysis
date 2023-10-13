@@ -50,3 +50,18 @@ Replace /path/to/your/output_directory with the desired directory where you want
 
 **[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh)** 
 
+## FastQC Analysis Scripts
+Welcome to the FastQC Analysis Scripts repository! This collection of Bash scripts is designed to automate the quality control analysis of trimmed FASTQ files using FastQC. The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
+
+How to Use:
+Replace File Names:
+Replace "sample1_trimmed.fastq", "sample2_trimmed.fastq", etc., with the actual filenames of your trimmed FASTQ files.
+
+Set Output Directory:
+Replace "/path/to/output_directory" with the desired directory where you want to save the FastQC results.
+
+Run the Script:
+Execute the script, and it will automatically run FastQC on the specified trimmed FASTQ files and save the results in the specified output directory.
+
+Feel free to customize and use these scripts to streamline your FastQC analysis process.
+**[fastqc_trimmed.sh](https://github.com/username/repository-name/blob/main/fastqc_trimmed.sh)** 
