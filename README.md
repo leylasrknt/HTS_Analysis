@@ -106,7 +106,7 @@ Execute the script, and it will automatically process each pair of input files, 
 
 **[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh)** 
 
-## HISAT2 Automated Alignment Script
+## 🧬HISAT2 Automated Alignment Script
 
 Welcome to our HISAT2 Automated Alignment Script repository! This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome. 
 
