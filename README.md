@@ -20,7 +20,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 6. **[hisat2_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/hisat2_to_run.sh):** Provides instructions and parameters for running HISAT2, a popular tool for aligning sequencing reads to a reference genome or transcriptome. Proper alignment is crucial for understanding where the sequenced fragments originated in the reference genome.
 
-7. **[Picard.sh](https://github.com/username/repository-name/blob/main/Picard.sh):** Offers instructions on utilizing the Picard tools, a set of command-line utilities for manipulating high-throughput sequencing data files. Picard tools are commonly used for tasks such as sorting, indexing, and marking duplicates in BAM files.
+7. **[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh):** Offers instructions on utilizing the Picard tools, a set of command-line utilities for manipulating high-throughput sequencing data files. Picard tools are commonly used for tasks such as sorting, indexing, and marking duplicates in BAM files.
 
 8. **[bam_to_bami_index.sh](https://github.com/username/repository-name/blob/main/bam_to_bami_index.sh):** This script creates index files for BAM (Binary Alignment/Map) files. Indexing BAM files allows for efficient retrieval of specific regions of interest, enabling targeted analysis without the need to process the entire dataset.
 
@@ -127,4 +127,21 @@ Execute the script, and it will automatically align each pair of trimmed FASTQ f
 Feel free to modify the script to match your specific project requirements. If you have any questions or need assistance, don't hesitate to reach out. Enjoy seamless alignment with our automated HISAT2 script!
 
 **[hisat2_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/hisat2_to_run.sh)**
+
+## 🌟 Picard Duplicate Marking Script 
+
+Welcome to our Picard Duplicate Marking Script repository! This Bash script automates the removal of duplicates from your BAM files using Picard, ensuring cleaner and more accurate sequencing data for downstream analysis.
+
+### What This Script Does:
+
+This script processes multiple BAM files, identifies duplicate reads, and marks them for removal. It improves the integrity of your data, preparing it for advanced genomic investigations.
+
+### How to Use:
+
+**Set Paths:** Specify the directories for your input BAM files and where you want to save the Picard results.
+
+**Run the Script:** Execute the script to process each BAM file, removing duplicates and generating marked BAM files along with metrics reports.
+**[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh)**
+
+
 
