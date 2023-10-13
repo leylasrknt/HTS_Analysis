@@ -16,7 +16,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 4. **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh):** This script generates a MultiQC report, which compiles and visualizes quality control information from multiple tools used in the analysis. MultiQC simplifies the process of aggregating data from various sources, providing a comprehensive overview of the analysis results.
 
-5. **[trimmer.sh](https://github.com/username/repository-name/blob/main/trimmer.sh):** This script trims raw sequencing data, removing low-quality sequences and adapters. Trimming is an essential preprocessing step to enhance the quality of sequencing data, ensuring more accurate downstream analysis.
+5. **[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh):** This script trims raw sequencing data, removing low-quality sequences and adapters. Trimming is an essential preprocessing step to enhance the quality of sequencing data, ensuring more accurate downstream analysis.
 
 6. **[hisat2_to_run.sh](https://github.com/username/repository-name/blob/main/hisat2_to_run.sh):** Provides instructions and parameters for running HISAT2, a popular tool for aligning sequencing reads to a reference genome or transcriptome. Proper alignment is crucial for understanding where the sequenced fragments originated in the reference genome.
 
@@ -84,3 +84,25 @@ Customize the multiqc_output variable to specify where you want the MultiQC repo
 Execute the script, and MultiQC will do the heavy lifting, creating a consolidated report in the specified output directory.
 
 **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh)**
+
+## Trimmomatic Automated Processing Script
+
+Welcome to our Trimmomatic Automated Processing Script repository! This Bash script streamlines the preprocessing of paired-end high-throughput sequencing data using Trimmomatic, a popular tool for adapter removal and quality filtering.
+
+### What This Script Does
+
+This script automates the Trimmomatic process for multiple sets of paired-end sequencing data. It removes adapters, trims low-quality bases, and filters out short sequences, ensuring high-quality data for downstream analysis. The script handles various input file prefixes, making it adaptable to different datasets.
+
+### How to Use
+
+**Specify Input and Output Paths:**
+Set the paths for your adapter file, input data directory, output directory, and log files.
+
+**Configure Trimmomatic Parameters:**
+Customize the Trimmomatic command according to your data and quality requirements.
+
+**Run the Script:**
+Execute the script, and it will automatically process each pair of input files, generating trimmed output files and log reports.
+
+**[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh)** 
+
