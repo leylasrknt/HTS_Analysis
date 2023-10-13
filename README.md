@@ -46,7 +46,7 @@ Replace your_sra_file.sra with the actual name of the SRA file you want to downl
 Set Output Directory:
 Replace /path/to/your/output_directory with the desired directory where you want to save the downloaded fastq files.
 
-**[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** 
+**[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh)** 
 
-**[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** 
+**[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh)** 
 
