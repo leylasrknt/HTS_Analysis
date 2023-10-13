@@ -6,16 +6,6 @@ A comprehensive collection of scripts and tools for High-Throughput Sequencing (
 
 
 # HTS Analysis (BULK RNA SEQ) 
-## SRA Data Download Script
-This Bash script is designed to automate the process of downloading sequencing data from the Sequence Read Archive (SRA). It utilizes the fasterq-dump tool from the NCBI SRA Toolkit to efficiently download SRA files and split them into fastq files.
-
-How to Use:
-Set SRA File:
-Replace your_sra_file.sra with the actual name of the SRA file you want to download.
-
-Set Output Directory:
-Replace /path/to/your/output_directory with the desired directory where you want to save the downloaded fastq files.
-
 Run the Script:
 Execute the script, and it will automatically download the specified SRA file, split it into fastq files, and save them in the specified output directory.
 1. **[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** This script automates the process of downloading sequencing data from the Sequence Read Archive (SRA), a publicly available repository of high-throughput sequencing data.
@@ -46,4 +36,17 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 Explore, adapt, and utilize these scripts for your HTS data analysis projects. Happy analyzing!
 
+## SRA Data Download Script
+This Bash script is designed to automate the process of downloading sequencing data from the Sequence Read Archive (SRA). It utilizes the fasterq-dump tool from the NCBI SRA Toolkit to efficiently download SRA files and split them into fastq files.
+
+How to Use:
+Set SRA File:
+Replace your_sra_file.sra with the actual name of the SRA file you want to download.
+
+Set Output Directory:
+Replace /path/to/your/output_directory with the desired directory where you want to save the downloaded fastq files.
+
+**[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** 
+
+**[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** 
 
