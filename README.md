@@ -1,6 +1,7 @@
 # HTS_Analysis
 A comprehensive collection of scripts and tools for High-Throughput Sequencing (HTS) data analysis. Explore various functionalities, from data preprocessing to differential expression analysis, designed to streamline your omic research projects
-# <img src="![HTS](https://github.com/leylasrknt/HTS_Analysis/assets/77142451/4f9f7bd8-3270-49a3-9aa4-52f907b4cd4d" alt="Proje Logosu" width="80">  HTS Analysis (BULK RNA SEQ) 
+# <img src="![HTS](https://github.com/leylasrknt/HTS_Analysis/assets/77142451/9969ef6a-7599-4eb2-a543-465a881ce425)
+" width="80">  HTS Analysis (BULK RNA SEQ) 
 
 1. **[SRA_download_file.sh](https://github.com/username/repository-name/blob/main/SRA_download_file.sh):** This scrip automates the process of downloading sequencing data from the Sequence Read Archive (SRA), a publicly available repository of high-throughput sequencing data. 
 
