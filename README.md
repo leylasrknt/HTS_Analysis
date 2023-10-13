@@ -12,7 +12,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 2. **[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** After downloading data from SRA, this script utilizes the SRA Toolkit to convert the downloaded files into FASTQ format. FASTQ is a common file format used to store biological sequences and their corresponding quality scores.
 
-3. **[fastqc_trimmed.sh](https://github.com/username/repository-name/blob/main/fastqc_trimmed.sh):** Following data trimming, this script performs quality control using FastQC. FastQC is a tool that analyzes and reports the quality of sequencing data, providing valuable insights into potential issues or artifacts present in the dataset.
+3. **[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh):** Following data trimming, this script performs quality control using FastQC. FastQC is a tool that analyzes and reports the quality of sequencing data, providing valuable insights into potential issues or artifacts present in the dataset.
 
 4. **[multiqc.sh](https://github.com/username/repository-name/blob/main/multiqc.sh):** This script generates a MultiQC report, which compiles and visualizes quality control information from multiple tools used in the analysis. MultiQC simplifies the process of aggregating data from various sources, providing a comprehensive overview of the analysis results.
 
@@ -64,4 +64,5 @@ Run the Script:
 Execute the script, and it will automatically run FastQC on the specified trimmed FASTQ files and save the results in the specified output directory.
 
 Feel free to customize and use these scripts to streamline your FastQC analysis process.
-**[fastqc_trimmed.sh](https://github.com/username/repository-name/blob/main/fastqc_trimmed.sh)** 
+
+**[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)** 
