@@ -143,5 +143,24 @@ This script processes multiple BAM files, identifies duplicate reads, and marks 
 **Run the Script:** Execute the script to process each BAM file, removing duplicates and generating marked BAM files along with metrics reports.
 **[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh)**
 
+##   **Optimized Differential Expression Analysis** 
+
+Welcome to our optimized repository for Differential Expression Analysis in R! This code provides efficient scripts for analyzing RNA-seq data using DESeq2. The provided scripts include generating Volcano Plots, PCA Analysis, and Heatmaps. 
+
+**What's Included:**
+
+- **Volcano Plot**: Visualize differential expression results with ease.
+- **PCA Analysis**: Explore sample relationships in a high-dimensional space.
+- **Heatmap**: Identify gene expression patterns in a visually appealing way.
+- **Up/Down-Regulated Genes**: Easily filter genes based on fold change and adjusted p-value thresholds.
+
+**How to Use:**
+
+1. **Clone the Repository**: Clone this repository to your local machine.
+
+2. **Run the Scripts**: Modify the analysis parameters in the R scripts and execute them to perform differential expression analysis on your RNA-seq data.
+
+3. **Explore Your Results**: Visualize and explore the generated plots and lists to gain insights into your dataset.
+
 
 
