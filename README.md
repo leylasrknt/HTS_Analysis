@@ -52,7 +52,7 @@ Replace /path/to/your/output_directory with the desired directory where you want
 
 ## 🚀FastQC Analysis Scripts
  
-This collection of Bash script is here to make your life easier when it comes to checking the quality of your trimmed FASTQ files using FastQC.The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
+This collection of Bash script is here to make your life easier when it comes to checking the quality of your trimmed FASTQ files using FastQC. The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
 
 How to Use:
 Replace File Names:
