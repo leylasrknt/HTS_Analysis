@@ -14,7 +14,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 3. **[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh):** Following data trimming, this script performs quality control using FastQC. FastQC is a tool that analyzes and reports the quality of sequencing data, providing valuable insights into potential issues or artifacts present in the dataset.
 
-4. **[multiqc.sh](https://github.com/username/repository-name/blob/main/multiqc.sh):** This script generates a MultiQC report, which compiles and visualizes quality control information from multiple tools used in the analysis. MultiQC simplifies the process of aggregating data from various sources, providing a comprehensive overview of the analysis results.
+4. **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh):** This script generates a MultiQC report, which compiles and visualizes quality control information from multiple tools used in the analysis. MultiQC simplifies the process of aggregating data from various sources, providing a comprehensive overview of the analysis results.
 
 5. **[trimmer.sh](https://github.com/username/repository-name/blob/main/trimmer.sh):** This script trims raw sequencing data, removing low-quality sequences and adapters. Trimming is an essential preprocessing step to enhance the quality of sequencing data, ensuring more accurate downstream analysis.
 
@@ -67,3 +67,20 @@ Execute the script, and it will automatically run FastQC on the specified trimme
 Feel free to customize and use these scripts to streamline your FastQC analysis process.
 
 **[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)** 
+
+## MultiQC Report Generation
+Welcome to the MultiQC Report Generation repository! This script simplifies the process of generating comprehensive quality control reports for your bioinformatics analyses.
+
+What This Script Does:
+This Bash script utilizes MultiQC, a powerful tool for aggregating and visualizing quality control information from multiple analysis tools. Specifically, it combines FastQC results from "/results/qc/fastqc" and Trimmomatic logs from "/results/logs/trimmomatic", generating a unified report.
+
+How to Use:
+Specify Input Directories:
+Define the paths to your FastQC results and Trimmomatic logs by modifying the fastqc_results and trimmomatic_logs variables, respectively.
+
+Set Output Location:
+Customize the multiqc_output variable to specify where you want the MultiQC report to be saved.
+
+Run the Script:
+Execute the script, and MultiQC will do the heavy lifting, creating a consolidated report in the specified output directory.
+**[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh)**
