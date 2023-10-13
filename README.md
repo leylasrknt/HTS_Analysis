@@ -2,7 +2,7 @@
 
 A comprehensive collection of scripts and tools for High-Throughput Sequencing (HTS) data analysis. Explore various functionalities, from data preprocessing to differential expression analysis, designed to streamline your omic research projects.
 
-<img src="https://github.com/leylasrknt/HTS_Analysis/raw/main/assets/77142451/21e04887-550c-41c8-93d3-3cf42c000be1.png" alt="HTS Logo" width="80">
+<img src="https://www.canva.com/design/DAFxJDy5KTs/6KbUPsHTdf71QhOAHqvKBQ/edit?utm_content=DAFxJDy5KTs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="HTS Logo" width="80">
 
 
 
