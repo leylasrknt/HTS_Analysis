@@ -8,7 +8,7 @@ A comprehensive collection of scripts and tools for High-Throughput Sequencing (
 # HTS Analysis (BULK RNA SEQ) 
 1. **[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** This script automates the process of downloading sequencing data from the Sequence Read Archive (SRA), a publicly available repository of high-throughput sequencing data.
 
-2. **[fastqdump.sh](https://github.com/username/repository-name/blob/main/fastqdump.sh):** After downloading data from SRA, this script utilizes the SRA Toolkit to convert the downloaded files into FASTQ format. FASTQ is a common file format used to store biological sequences and their corresponding quality scores.
+2. **[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** After downloading data from SRA, this script utilizes the SRA Toolkit to convert the downloaded files into FASTQ format. FASTQ is a common file format used to store biological sequences and their corresponding quality scores.
 
 3. **[fastqc_trimmed.sh](https://github.com/username/repository-name/blob/main/fastqc_trimmed.sh):** Following data trimming, this script performs quality control using FastQC. FastQC is a tool that analyzes and reports the quality of sequencing data, providing valuable insights into potential issues or artifacts present in the dataset.
 
