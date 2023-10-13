@@ -18,7 +18,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 5. **[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh):** This script trims raw sequencing data, removing low-quality sequences and adapters. Trimming is an essential preprocessing step to enhance the quality of sequencing data, ensuring more accurate downstream analysis.
 
-6. **[hisat2_to_run.sh](https://github.com/username/repository-name/blob/main/hisat2_to_run.sh):** Provides instructions and parameters for running HISAT2, a popular tool for aligning sequencing reads to a reference genome or transcriptome. Proper alignment is crucial for understanding where the sequenced fragments originated in the reference genome.
+6. **[hisat2_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/hisat2_to_run.sh):** Provides instructions and parameters for running HISAT2, a popular tool for aligning sequencing reads to a reference genome or transcriptome. Proper alignment is crucial for understanding where the sequenced fragments originated in the reference genome.
 
 7. **[Picard.sh](https://github.com/username/repository-name/blob/main/Picard.sh):** Offers instructions on utilizing the Picard tools, a set of command-line utilities for manipulating high-throughput sequencing data files. Picard tools are commonly used for tasks such as sorting, indexing, and marking duplicates in BAM files.
 
@@ -105,4 +105,26 @@ Customize the Trimmomatic command according to your data and quality requirement
 Execute the script, and it will automatically process each pair of input files, generating trimmed output files and log reports.
 
 **[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh)** 
+
+# HISAT2 Automated Alignment Script
+
+Welcome to our HISAT2 Automated Alignment Script repository! This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome. 
+
+## What This Script Does
+
+This script automates the alignment process for multiple sets of paired-end sequencing data. It takes trimmed FASTQ files as input, aligns the reads to the specified genome index using HISAT2, converts the output SAM files to sorted BAM files, and indexes them for further analysis. The script is designed to handle various samples, making it adaptable for diverse datasets.
+
+## How to Use
+
+### Specify Input Paths
+
+Set the paths for your genome index, directory containing trimmed FASTQ files, and the desired output directory.
+
+### Run the Script
+
+Execute the script, and it will automatically align each pair of trimmed FASTQ files, generating sorted and indexed BAM files.
+
+Feel free to modify the script to match your specific project requirements. If you have any questions or need assistance, don't hesitate to reach out. Enjoy seamless alignment with our automated HISAT2 script!
+
+**[hisat2_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/hisat2_to_run.sh)**
 
