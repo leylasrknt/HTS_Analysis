@@ -143,6 +143,36 @@ This script processes multiple BAM files, identifies duplicate reads, and marks 
 **Run the Script:** Execute the script to process each BAM file, removing duplicates and generating marked BAM files along with metrics reports.
 **[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh)**
 
+## 📊 DESeq2 Differential Expression Analysis Script
+
+Welcome to our DESeq2 Differential Expression Analysis Script repository! This R script automates the process of identifying differentially expressed genes from high-throughput sequencing count data, such as RNA-seq counts. It employs the powerful DESeq2 package, streamlining the analysis and providing valuable insights into gene expression variations.
+
+### What This Script Does:
+
+#### Library Loading: 
+The script starts by loading essential R libraries, including DESeq2 for statistical analysis and dplyr for data manipulation.
+
+#### Set Your Data: 
+Configure the working directory to point to your count data directory, and ensure your metadata is correctly formatted in a CSV file.
+
+#### Data Processing: 
+The script scans the directory for count data files with the ".txt" extension, reads, and organizes them. Simultaneously, it reads metadata, preparing the data for analysis.
+
+#### DESeqDataSet Creation: 
+The DESeq2 analysis begins by creating a DESeqDataSet, combining count data with metadata. The design formula specifies the variables to analyze, allowing for a targeted investigation.
+
+#### Differential Expression Analysis: 
+DESeq2 analysis is performed, identifying genes showing significant expression differences between conditions or time points.
+
+#### Results Export: 
+The results are exported as a CSV file ("differential_expression_results.csv"), enabling further exploration and visualization of differentially expressed genes.
+
+#### How to Use:
+
+1. **Modify the working directory path** to match your count data directory.
+2. **Ensure your metadata is correctly formatted** in a CSV file and referenced appropriately in the script.
+3. **Execute the script** in your R environment. Analyze the generated "differential_expression_results.csv" file to gain valuable insights into gene expression changes.
+
 ##   **Optimized Differential Expression Analysis** 
 
 Welcome to our optimized repository for Differential Expression Analysis in R! This code provides efficient scripts for analyzing RNA-seq data using DESeq2. The provided scripts include generating Volcano Plots, PCA Analysis, and Heatmaps. 
