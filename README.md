@@ -65,4 +65,5 @@ Run the Script:
 Execute the script, and it will automatically run FastQC on the specified trimmed FASTQ files and save the results in the specified output directory.
 
 Feel free to customize and use these scripts to streamline your FastQC analysis process.
+
 **[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)** 
