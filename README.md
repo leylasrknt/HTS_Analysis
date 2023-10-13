@@ -82,4 +82,5 @@ Customize the multiqc_output variable to specify where you want the MultiQC repo
 
 ### Run the Script:
 Execute the script, and MultiQC will do the heavy lifting, creating a consolidated report in the specified output directory.
+
 **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh)**
