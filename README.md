@@ -39,11 +39,11 @@ Explore, adapt, and utilize these scripts for your HTS data analysis projects. H
 ## SRA Data Download Script
 This Bash script is designed to automate the process of downloading sequencing data from the Sequence Read Archive (SRA). It utilizes the fasterq-dump tool from the NCBI SRA Toolkit to efficiently download SRA files and split them into fastq files.
 
-How to Use:
+### How to Use:
 Set SRA File:
 Replace your_sra_file.sra with the actual name of the SRA file you want to download.
 
-Set Output Directory:
+### Set Output Directory:
 Replace /path/to/your/output_directory with the desired directory where you want to save the downloaded fastq files.
 
 **[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh)** 
@@ -54,33 +54,32 @@ Replace /path/to/your/output_directory with the desired directory where you want
  
 This collection of Bash script is here to make your life easier when it comes to checking the quality of your trimmed FASTQ files using FastQC. The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
 
-How to Use:
+### How to Use:
 Replace File Names:
 Replace "sample1_trimmed.fastq", "sample2_trimmed.fastq", etc., with the actual filenames of your trimmed FASTQ files.
 
-Set Output Directory:
+### Set Output Directory:
 Replace "/path/to/output_directory" with the desired directory where you want to save the FastQC results.
 
-Run the Script:
+### Run the Script:
 Execute the script, and it will automatically run FastQC on the specified trimmed FASTQ files and save the results in the specified output directory.
 
-Feel free to customize and use these scripts to streamline your FastQC analysis process.
 
 **[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)** 
 
 ## MultiQC Report Generation
 Welcome to the MultiQC Report Generation repository! This script simplifies the process of generating comprehensive quality control reports for your bioinformatics analyses.
 
-What This Script Does:
+### What This Script Does:
 This Bash script utilizes MultiQC, a powerful tool for aggregating and visualizing quality control information from multiple analysis tools. Specifically, it combines FastQC results from "/results/qc/fastqc" and Trimmomatic logs from "/results/logs/trimmomatic", generating a unified report.
 
-How to Use:
+### How to Use:
 Specify Input Directories:
 Define the paths to your FastQC results and Trimmomatic logs by modifying the fastqc_results and trimmomatic_logs variables, respectively.
 
-Set Output Location:
+### Set Output Location:
 Customize the multiqc_output variable to specify where you want the MultiQC report to be saved.
 
-Run the Script:
+### Run the Script:
 Execute the script, and MultiQC will do the heavy lifting, creating a consolidated report in the specified output directory.
 **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh)**
