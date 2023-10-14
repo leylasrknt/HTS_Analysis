@@ -58,7 +58,7 @@ Replace /path/to/your/output_directory with the desired directory where you want
 
 ## 🚀FastQC Analysis Scripts
 
-This collection of Bash script is here to make your life easier when it comes to checking the quality of your trimmed FASTQ files using FastQC. The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
+The scripts activate the necessary Conda environment, run FastQC on a list of FASTQ files, and save the results in a specified output directory.
 
 ### How to Use:
 
@@ -77,7 +77,7 @@ Execute the script, and it will automatically run FastQC on the specified trimme
 
 ## MultiQC Report Generation
 
-Welcome to the MultiQC Report Generation repository! This script simplifies the process of generating comprehensive quality control reports for your bioinformatics analyses.
+This script simplifies the process of generating comprehensive quality control reports for your bioinformatics analyses.
 
 ### What This Script Does:
 
@@ -100,7 +100,7 @@ Execute the script, and MultiQC will do the heavy lifting, creating a consolidat
 
 ## Trimmomatic Automated Processing Script
 
-Welcome to our Trimmomatic Automated Processing Script repository! This Bash script streamlines the preprocessing of paired-end high-throughput sequencing data using Trimmomatic, a popular tool for adapter removal and quality filtering.
+This Bash script streamlines the preprocessing of paired-end high-throughput sequencing data using Trimmomatic, a popular tool for adapter removal and quality filtering.
 
 ### What This Script Does
 
@@ -123,7 +123,7 @@ Execute the script, and it will automatically process each pair of input files, 
 
 ## 🧬HISAT2 Automated Alignment Script
 
-Welcome to our HISAT2 Automated Alignment Script repository! This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome.
+This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome.
 
 ### What This Script Does
 
@@ -147,7 +147,7 @@ Feel free to modify the script to match your specific project requirements. If y
 
 ## 🌟 Picard Duplicate Marking Script 
 
-Welcome to our Picard Duplicate Marking Script repository! This Bash script automates the removal of duplicates from your BAM files using Picard, ensuring cleaner and more accurate sequencing data for downstream analysis.
+This Bash script automates the removal of duplicates from your BAM files using Picard, ensuring cleaner and more accurate sequencing data for downstream analysis.
 
 ### What This Script Does:
 
@@ -229,7 +229,7 @@ The results are exported as a CSV file ("differential_expression_results.csv"), 
 
 ##   **Optimized Differential Expression Analysis** 
 
-Welcome to our optimized repository for Differential Expression Analysis in R! This code provides efficient scripts for analyzing RNA-seq data using DESeq2. The provided scripts include generating Volcano Plots, PCA Analysis, and Heatmaps. 
+This code provides efficient scripts for analyzing RNA-seq data using DESeq2. The provided scripts include generating Volcano Plots, PCA Analysis, and Heatmaps. 
 
 **What's Included:**
 
