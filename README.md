@@ -2,12 +2,14 @@
 
 A comprehensive collection of scripts and tools for High-Throughput Sequencing (HTS) data analysis. Explore various functionalities, from data preprocessing to differential expression analysis, designed to streamline your omic research projects.
 
-
-
+---
 
 # HTS Analysis (BULK RNA SEQ) 
-Run the Script:
+
+## Run the Script
+
 Execute the script, and it will automatically download the specified SRA file, split it into fastq files, and save them in the specified output directory.
+
 1. **[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** This script automates the process of downloading sequencing data from the Sequence Read Archive (SRA), a publicly available repository of high-throughput sequencing data.
 
 2. **[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** After downloading data from SRA, this script utilizes the SRA Toolkit to convert the downloaded files into FASTQ format. FASTQ is a common file format used to store biological sequences and their corresponding quality scores.
@@ -36,54 +38,67 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 Explore, adapt, and utilize these scripts for your HTS data analysis projects. Happy analyzing!
 
+---
+
 ## SRA Data Download Script
+
 This Bash script is designed to automate the process of downloading sequencing data from the Sequence Read Archive (SRA). It utilizes the fasterq-dump tool from the NCBI SRA Toolkit to efficiently download SRA files and split them into fastq files.
 
 ### How to Use:
+
 Set SRA File:
 Replace your_sra_file.sra with the actual name of the SRA file you want to download.
 
-### Set Output Directory:
+Set Output Directory:
 Replace /path/to/your/output_directory with the desired directory where you want to save the downloaded fastq files.
 
-**[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh)** 
+**[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh)**
 
-**[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh)** 
+**[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh)**
+
+---
 
 ## 🚀FastQC Analysis Scripts
- 
+
 This collection of Bash script is here to make your life easier when it comes to checking the quality of your trimmed FASTQ files using FastQC. The scripts activate the necessary Conda environment, run FastQC on a list of trimmed FASTQ files, and save the results in a specified output directory.
 
 ### How to Use:
+
 Replace File Names:
 Replace "sample1_trimmed.fastq", "sample2_trimmed.fastq", etc., with the actual filenames of your trimmed FASTQ files.
 
-### Set Output Directory:
+Set Output Directory:
 Replace "/path/to/output_directory" with the desired directory where you want to save the FastQC results.
 
-### Run the Script:
+Run the Script:
 Execute the script, and it will automatically run FastQC on the specified trimmed FASTQ files and save the results in the specified output directory.
 
+**[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)**
 
-**[fastqc_trimmed.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqc_trimmed.sh)** 
+---
 
 ## MultiQC Report Generation
+
 Welcome to the MultiQC Report Generation repository! This script simplifies the process of generating comprehensive quality control reports for your bioinformatics analyses.
 
 ### What This Script Does:
+
 This Bash script utilizes MultiQC, a powerful tool for aggregating and visualizing quality control information from multiple analysis tools. Specifically, it combines FastQC results from "/results/qc/fastqc" and Trimmomatic logs from "/results/logs/trimmomatic", generating a unified report.
 
 ### How to Use:
+
 Specify Input Directories:
 Define the paths to your FastQC results and Trimmomatic logs by modifying the fastqc_results and trimmomatic_logs variables, respectively.
 
-### Set Output Location:
+Set Output Location:
 Customize the multiqc_output variable to specify where you want the MultiQC report to be saved.
 
-### Run the Script:
+Run the Script:
 Execute the script, and MultiQC will do the heavy lifting, creating a consolidated report in the specified output directory.
 
 **[multiqc.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/multiqc.sh)**
+
+---
 
 ## Trimmomatic Automated Processing Script
 
@@ -104,11 +119,13 @@ Customize the Trimmomatic command according to your data and quality requirement
 **Run the Script:**
 Execute the script, and it will automatically process each pair of input files, generating trimmed output files and log reports.
 
-**[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh)** 
+**[trimmer.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/trimmer.sh)**
+
+---
 
 ## 🧬HISAT2 Automated Alignment Script
 
-Welcome to our HISAT2 Automated Alignment Script repository! This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome. 
+Welcome to our HISAT2 Automated Alignment Script repository! This Bash script facilitates the alignment of paired-end high-throughput sequencing data using HISAT2, a popular tool for mapping sequencing reads to a reference genome.
 
 ### What This Script Does
 
@@ -127,6 +144,8 @@ Execute the script, and it will automatically align each pair of trimmed FASTQ f
 Feel free to modify the script to match your specific project requirements. If you have any questions or need assistance, don't hesitate to reach out. Enjoy seamless alignment with our automated HISAT2 script!
 
 **[hisat2_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/hisat2_to_run.sh)**
+
+---
 
 ## 🌟 Picard Duplicate Marking Script 
 
@@ -229,7 +248,7 @@ Welcome to our optimized repository for Differential Expression Analysis in R! T
 
 3. **Analyze Results**: Visualize your data with generated plots and lists.
 
-**[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R)** 
+**[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R)**
 
 # UpSetR Differential Gene Expression Analysis
 
@@ -255,7 +274,7 @@ This R script facilitates the visualization of overlapping and unique gene sets 
    - Analyze the generated UpSet plots to explore overlapping and unique genes among different conditions or time points.
  **[Upset_Plot.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/Upset_Plot.R)**
 
-##  Gene Set Enrichment Analysis Script
+## Gene Set Enrichment Analysis Script
 
 This R script simplifies the process of performing gene set enrichment analysis using the clusterProfiler package. It enables you to convert gene names to ENSEMBL IDs and identify enriched biological processes (BP) within your gene sets.
 
@@ -268,12 +287,10 @@ How to Use:
 1. **Set Your Data:** Replace sample gene lists (e.g., `upregulated_genes_4`, `downregulated_genes_8`) with your gene sets.
 2. **Run the Script:** Execute the script in your R environment. Analyze the generated enrichment results to gain insights into biological processes associated with your gene sets.
 
- **[GO_clusterProfiler.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/GO_clusterProfiler.R)** 
+**[GO_clusterProfiler.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/GO_clusterProfiler.R)**
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 [![License.md: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leylasrknt/HTS_Analysis/blob/main/LICENSE.md)
-
-
