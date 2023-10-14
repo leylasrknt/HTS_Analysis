@@ -8,8 +8,6 @@ A comprehensive collection of scripts and tools for High-Throughput Sequencing (
 
 ## Run the Script
 
-Execute the script, and it will automatically download the specified SRA file, split it into fastq files, and save them in the specified output directory.
-
 1. **[SRA_download_file.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/SRA_download_file.sh):** This script automates the process of downloading sequencing data from the Sequence Read Archive (SRA), a publicly available repository of high-throughput sequencing data.
 
 2. **[fastqdump.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/fastqdump.sh):** After downloading data from SRA, this script utilizes the SRA Toolkit to convert the downloaded files into FASTQ format. FASTQ is a common file format used to store biological sequences and their corresponding quality scores.
