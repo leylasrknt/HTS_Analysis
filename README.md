@@ -231,6 +231,30 @@ Welcome to our optimized repository for Differential Expression Analysis in R! T
 
 **[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R)** 
 
+# UpSetR Differential Gene Expression Analysis
+
+This R script facilitates the visualization of overlapping and unique gene sets across multiple conditions or time points, helping you gain insights into your RNA-seq data.
+
+### Features:
+
+- **Automated Visualization:** Analyze overlapping gene sets effortlessly with automated UpSet plots.
+- **Flexible Input:** Customize input gene lists for different conditions or time points, adapting to your experimental design.
+- **Color-Coded Results:** Visualize upregulated and downregulated gene sets with distinct colors, enhancing clarity.
+- **Insightful Exploration:** Understand complex gene relationships and identify unique and shared genes across datasets.
+
+### How to Use:
+
+1. **Prepare Gene Lists:**
+   - Organize your upregulated and downregulated gene lists into separate files (e.g., `upregulated_genes_4.txt`, `downregulated_genes_4.txt`).
+  
+2. **Run the Script:**
+   - Modify the script to include the paths to your gene list files and customize colors if desired.
+   - Execute the script in your R environment to generate UpSet plots for your gene sets.
+
+3. **Explore Your Data:**
+   - Analyze the generated UpSet plots to explore overlapping and unique genes among different conditions or time points.
+
+
 
 
 
