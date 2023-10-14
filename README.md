@@ -274,6 +274,6 @@ How to Use:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leylasrknt/HTS_Analysis/blob/main/LICENSE.md)
 
 
