@@ -22,7 +22,7 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 7. **[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh):** Offers instructions on utilizing the Picard tools, a set of command-line utilities for manipulating high-throughput sequencing data files. Picard tools are commonly used for tasks such as sorting, indexing, and marking duplicates in BAM files.
 
-8. **[bam_to_bami_index.sh](https://github.com/username/repository-name/blob/main/bam_to_bami_index.sh):** This script creates index files for BAM (Binary Alignment/Map) files. Indexing BAM files allows for efficient retrieval of specific regions of interest, enabling targeted analysis without the need to process the entire dataset.
+8. **[bam_to_bami_index.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/bam_to_bami_index.sh):** This script creates index files for BAM (Binary Alignment/Map) files. Indexing BAM files allows for efficient retrieval of specific regions of interest, enabling targeted analysis without the need to process the entire dataset.
 
 9. **[Htseq_to_run.sh](https://github.com/username/repository-name/blob/main/Htseq_to_run.sh):** Provides instructions for running HTSeq, a tool used for counting reads that are mapped to genes. HTSeq is often employed in gene expression analysis, providing gene-level read count information for downstream statistical analysis.
 
@@ -142,6 +142,29 @@ This script processes multiple BAM files, identifies duplicate reads, and marks 
 
 **Run the Script:** Execute the script to process each BAM file, removing duplicates and generating marked BAM files along with metrics reports.
 **[Picard.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Picard.sh)**
+
+**GitHub Repository Description:**
+
+🔍 **BAM File Indexing Script**
+
+This Bash script swiftly generates index (BAI) files for your BAM files, ensuring rapid data retrieval and analysis in genomics projects.
+
+### Features:
+
+**Automated Indexing:** Quickly index all BAM files in your specified directory with a single command.
+
+**Customizable Paths:** Easily configure the script by setting your BAM files' directory and the output location for BAI files.
+
+**File Integrity Check:** Ensures data integrity by verifying each file before indexing.
+
+**[bam_to_bami_index.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/bam_to_bami_index.sh)** 
+
+#### How to Use:
+
+1. **Set BAM File Directory:** Modify `"path/to/your/BAM/files"` to match your directory structure.
+2. **Specify Output Directory:** Adjust `"path/to/your/index/directory"` to define the BAI files' storage location.
+3. **Run the Script:** Execute the script in your terminal and watch the magic happen!
+
 
 ## 📊 DESeq2 Differential Expression Analysis Script
 
