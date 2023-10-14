@@ -30,9 +30,9 @@ Execute the script, and it will automatically download the specified SRA file, s
 
 11. **[DEseq_heatmap.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/DEseq_heatmap.R):** Generates heatmaps based on the results of DESeq2 analysis. Heatmaps are graphical representations used to visualize gene expression patterns, providing a clear visual representation of differential expression across samples or conditions.
 
-12. **[Upset_Plot.R](https://github.com/username/repository-name/blob/main/Upset_Plot.R):** Creates UpSet plots, a type of data visualization that allows for the analysis of sets, intersections, and their size relationships. UpSet plots are particularly useful for visualizing the overlap and uniqueness of gene sets, providing insights into shared and distinct features across different conditions or datasets.
+12. **[Upset_Plot.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/Upset_Plot.R):** Creates UpSet plots, a type of data visualization that allows for the analysis of sets, intersections, and their size relationships. UpSet plots are particularly useful for visualizing the overlap and uniqueness of gene sets, providing insights into shared and distinct features across different conditions or datasets.
 
-13. **[GO_clusterProfiler.R](https://github.com/username/repository-name/blob/main/GO_clusterProfiler.R):** This R script performs Gene Ontology (GO) enrichment analysis using the clusterProfiler package. GO enrichment analysis helps identify biological processes, cellular components, and molecular functions that are significantly overrepresented in a set of genes of interest.
+13. **[GO_clusterProfiler.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/GO_clusterProfiler.R):** This R script performs Gene Ontology (GO) enrichment analysis using the clusterProfiler package. GO enrichment analysis helps identify biological processes, cellular components, and molecular functions that are significantly overrepresented in a set of genes of interest.
 
 Explore, adapt, and utilize these scripts for your HTS data analysis projects. Happy analyzing!
 
@@ -253,7 +253,22 @@ This R script facilitates the visualization of overlapping and unique gene sets 
 
 3. **Explore Your Data:**
    - Analyze the generated UpSet plots to explore overlapping and unique genes among different conditions or time points.
+ **[Upset_Plot.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/Upset_Plot.R)**
 
+##  Gene Set Enrichment Analysis Script
+
+This R script simplifies the process of performing gene set enrichment analysis using the clusterProfiler package. It enables you to convert gene names to ENSEMBL IDs and identify enriched biological processes (BP) within your gene sets.
+
+Features:
+- **Automated Analysis:** Process multiple gene sets automatically, generating enrichment results for each set.
+- **Flexible Input:** Customize input gene sets and adjust parameters to match your specific dataset.
+- **Organized Output:** Enrichment results are structured and ready for further exploration and interpretation.
+
+How to Use:
+1. **Set Your Data:** Replace sample gene lists (e.g., `upregulated_genes_4`, `downregulated_genes_8`) with your gene sets.
+2. **Run the Script:** Execute the script in your R environment. Analyze the generated enrichment results to gain insights into biological processes associated with your gene sets.
+
+ **[GO_clusterProfiler.R](https://github.com/leylasrknt/HTS_Analysis/blob/main/GO_clusterProfiler.R)** 
 
 
 
