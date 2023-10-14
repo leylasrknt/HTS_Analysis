@@ -165,6 +165,20 @@ This Bash script swiftly generates index (BAI) files for your BAM files, ensurin
 2. **Specify Output Directory:** Adjust `"path/to/your/index/directory"` to define the BAI files' storage location.
 3. **Run the Script:** Execute the script in your terminal and watch the magic happen!
 
+## HTSeq Counting Script
+
+This Bash script simplifies the process of generating gene counts from your BAM files using HTSeq. Designed for RNA-seq data analysis, this script ensures accurate and efficient counting, providing essential data for downstream analyses.
+
+### Features:
+**Automated Counting:** Process multiple BAM files automatically, generating counts for each sample in one go.
+
+**Flexible Input:** Customize input paths for your BAM files and reference annotation file, making it adaptable to various datasets.
+
+**Organized Output:** Counts are saved in separate files, maintaining a clean and organized output directory structure.
+
+### How to Use:
+**Set Paths:** Update BAM_DIR, ANNOTATION_FILE, and OUTPUT_DIR to match your file locations.
+**Run the Script:** Execute the script, and it will process each BAM file, generating individual count files in the specified output directory.
 
 ## 📊 DESeq2 Differential Expression Analysis Script
 
