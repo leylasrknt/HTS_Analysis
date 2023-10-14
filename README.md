@@ -272,8 +272,8 @@ How to Use:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leylasrknt/HTS_Analysis/blob/main/LICENSE.md)
+[![License.md: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leylasrknt/HTS_Analysis/blob/main/LICENSE.md)
 
 
