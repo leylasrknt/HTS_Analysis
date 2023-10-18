@@ -24,7 +24,7 @@ A comprehensive collection of scripts and tools for High-Throughput Sequencing (
 
 8. **[bam_to_bami_index.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/bam_to_bami_index.sh):** This script creates index files for BAM (Binary Alignment/Map) files. Indexing BAM files allows for efficient retrieval of specific regions of interest, enabling targeted analysis without the need to process the entire dataset.
 
-9. **[Htseq_to_run.sh](https://github.com/username/repository-name/blob/main/Htseq_to_run.sh):** Provides instructions for running HTSeq, a tool used for counting reads that are mapped to genes. HTSeq is often employed in gene expression analysis, providing gene-level read count information for downstream statistical analysis.
+9. **[Htseq_to_run.sh](https://github.com/leylasrknt/HTS_Analysis/blob/main/Htseq_to_run.sh#L24C1-L25C1):** Provides instructions for running HTSeq, a tool used for counting reads that are mapped to genes. HTSeq is often employed in gene expression analysis, providing gene-level read count information for downstream statistical analysis.
 
 10. **[deseq_timepoint.R](https://github.com/username/repository-name/blob/main/deseq_timepoint.R):** This R script performs differential gene expression analysis using DESeq2 specifically tailored for timepoint data. DESeq2 is a widely used package in R for detecting differentially expressed genes between different conditions or timepoints in RNA-seq data.
 
