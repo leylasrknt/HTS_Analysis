@@ -8,32 +8,31 @@ FASTQ_DIR="path/to/your/trimmed/fastq/files"
 # Create the output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
 
-# List of sample numbers or identifiers
-SAMPLES=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24")
+# Get the list of trimmed FASTQ files in the specified directory
+TRIMMED_FILES=("$FASTQ_DIR"/*.fastq)
 
-# Loop through each sample and perform alignment
-for i in "${SAMPLES[@]}"; do
-    echo "Processing Sample $i..."
+# Loop through each trimmed FASTQ file and perform alignment
+for trimmed_file in "${TRIMMED_FILES[@]}"; do
+    echo "Processing $trimmed_file..."
 
-    # Define the file names for the current sample
-    TRIMMED_R1="${FASTQ_DIR}/sample_${i}_1_trimmed.fastq"
-    TRIMMED_R2="${FASTQ_DIR}/sample_${i}_2_trimmed.fastq"
+    # Extract the sample identifier from the file name (modify as needed)
+    sample_id=$(basename "$trimmed_file" | sed 's/sample_\([0-9]*\)_.*\.fastq/\1/')
 
     # Run HISAT2 for paired-end data
-    hisat2 -x "$INDEX_DIR/genome_index" -1 "$TRIMMED_R1" -2 "$TRIMMED_R2" -S "$OUTPUT_DIR/sample_${i}.sam"
+    hisat2 -x "$INDEX_DIR/genome_index" -U "$trimmed_file" -S "$OUTPUT_DIR/sample_${sample_id}.sam"
 
     # Convert SAM to BAM
-    samtools view -b -o "$OUTPUT_DIR/sample_${i}.bam" "$OUTPUT_DIR/sample_${i}.sam"
+    samtools view -b -o "$OUTPUT_DIR/sample_${sample_id}.bam" "$OUTPUT_DIR/sample_${sample_id}.sam"
 
     # Sort and index the BAM file
-    samtools sort -o "$OUTPUT_DIR/sample_${i}.sorted.bam" "$OUTPUT_DIR/sample_${i}.bam"
-    samtools index "$OUTPUT_DIR/sample_${i}.sorted.bam"
+    samtools sort -o "$OUTPUT_DIR/sample_${sample_id}.sorted.bam" "$OUTPUT_DIR/sample_${sample_id}.bam"
+    samtools index "$OUTPUT_DIR/sample_${sample_id}.sorted.bam"
 
     # Remove intermediate files (SAM and unsorted BAM)
-    rm "$OUTPUT_DIR/sample_${i}.sam"
-    rm "$OUTPUT_DIR/sample_${i}.bam"
+    rm "$OUTPUT_DIR/sample_${sample_id}.sam"
+    rm "$OUTPUT_DIR/sample_${sample_id}.bam"
 
-    echo "Sample $i completed."
+    echo "Sample $sample_id completed."
 done
 
 echo "All alignment jobs completed."
