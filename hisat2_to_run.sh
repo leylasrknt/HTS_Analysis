@@ -9,17 +9,20 @@ FASTQ_DIR="path/to/your/trimmed/fastq/files"
 mkdir -p "$OUTPUT_DIR"
 
 # Get the list of trimmed FASTQ files in the specified directory
-TRIMMED_FILES=("$FASTQ_DIR"/*.fastq)
+TRIMMED_FILES=("$FASTQ_DIR"/*_1.fastq.gz)
 
-# Loop through each trimmed FASTQ file and perform alignment
-for trimmed_file in "${TRIMMED_FILES[@]}"; do
-    echo "Processing $trimmed_file..."
+# Loop through each pair of trimmed FASTQ files and perform alignment
+for trimmed_file_1 in "${TRIMMED_FILES[@]}"; do
+    # Assuming the files are named consistently with "_1" and "_2" for the first and second reads
+    trimmed_file_2="${trimmed_file_1/_1/_2}"
+
+    echo "Processing $trimmed_file_1 and $trimmed_file_2..."
 
     # Extract the sample identifier from the file name (modify as needed)
-    sample_id=$(basename "$trimmed_file" | sed 's/sample_\([0-9]*\)_.*\.fastq/\1/')
+    sample_id=$(basename "$trimmed_file_1" | sed 's/sample_\([0-9]*\)_1.*\.fastq/\1/')
 
     # Run HISAT2 for paired-end data
-    hisat2 -x "$INDEX_DIR/genome_index" -U "$trimmed_file" -S "$OUTPUT_DIR/sample_${sample_id}.sam"
+    hisat2 -x "$INDEX_DIR/genome_index" -1 "$trimmed_file_1" -2 "$trimmed_file_2" -S "$OUTPUT_DIR/sample_${sample_id}.sam"
 
     # Convert SAM to BAM
     samtools view -b -o "$OUTPUT_DIR/sample_${sample_id}.bam" "$OUTPUT_DIR/sample_${sample_id}.sam"
