@@ -7,7 +7,7 @@ library(Rsubread)
 library(dplyr)
 
 # Path to your GTF file
-gtf_file <- "/mnt/Viro_Data/Mitarbeiter/Leyla/HepatitE_Virus_My_Project/data/referencess_data/ncbi_dataset/data/GCF_000001405.40/genomic.gtf"
+gtf_file <- "/genomic.gtf"
 
 # Read GTF file
 gtf <- readGFF(gtf_file)###subset 
@@ -76,7 +76,7 @@ for (gene_name in gene_names) {
 
 # View rpkm_df
 print(rpkm_df)
-write.table( rpkm_df,"/mnt/Viro_Data/Mitarbeiter/Leyla/HepatitE_Virus_My_Project/data/referencess_data/ncbi_dataset/data/GCF_000001405.40/genomic.gtf/rpkm.csv", sep = ",", col.names = TRUE, row.names = TRUE)
+write.table( rpkm_df,"genomic.gtf/rpkm.csv", sep = ",", col.names = TRUE, row.names = TRUE)
 
 
 
