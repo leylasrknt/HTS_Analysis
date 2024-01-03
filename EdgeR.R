@@ -64,16 +64,15 @@ results_557_558 <- perform_edgeR_analysis(subset_557_558, conditions_557_558, "5
 results_557_559 <- perform_edgeR_analysis(subset_557_559, conditions_557_559, "557_559")
 results_558_559 <- perform_edgeR_analysis(subset_558_559, conditions_558_559, "558_559")
 
-
-# Define FPKM and FC thresholds
-fpkm_threshold <- 1
+# Define RPKM and FC thresholds
+rpkm_threshold <- 1
 fc_threshold <- 2
 
 # Filter based on FPKM and FC
-filtered_results_551_552 <- et_551_552_df[et_551_552_df$Mean_C551_C552 > fpkm_threshold & abs(et_551_552_df$logFC) > fc_threshold, ]
-filtered_results_557_558 <- et_557_558_df[et_557_558_df$Mean_C557_C558 > fpkm_threshold & abs(et_557_558_df$logFC) > fc_threshold, ]
-filtered_results_557_559 <- et_557_559_df[et_557_559_df$Mean_C557_C559 > fpkm_threshold & abs(et_557_559_df$logFC) > fc_threshold, ]
-filtered_results_558_559 <- et_558_559_df[et_558_559_df$Mean_C558_C559 > fpkm_threshold & abs(et_558_559_df$logFC) > fc_threshold, ]
+filtered_results_551_552 <- et_551_552_df[et_551_552_df$Mean_C551_C552 > rpkm_threshold & abs(et_551_552_df$logFC) > fc_threshold, ]
+filtered_results_557_558 <- et_557_558_df[et_557_558_df$Mean_C557_C558 > rpkm_threshold & abs(et_557_558_df$logFC) > fc_threshold, ]
+filtered_results_557_559 <- et_557_559_df[et_557_559_df$Mean_C557_C559 > rpkm_threshold & abs(et_557_559_df$logFC) > fc_threshold, ]
+filtered_results_558_559 <- et_558_559_df[et_558_559_df$Mean_C558_C559 > rpkm_threshold & abs(et_558_559_df$logFC) > fc_threshold, ]
 
 # Save or further process filtered results as needed
 significant_genes_551_552<-filtered_results_551_552$gene_name
